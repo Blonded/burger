@@ -73,7 +73,6 @@ var orm = {
      }
      cb(result);
   });
-
 }
 
 };
