@@ -12,10 +12,10 @@ to the right side of the screen.
 * MySQL
 * Node.js
 * Express.js
-* Handlebars
+* {{ Handlebars }} 
 * Homemade ORM
 
-* Files using MVC [ Model, View, Controller] Design Pattern - necessary for functionality.
+* Files using MVC [Model, View, Controller] Design Pattern - necessary for functionality.
 * Launched with Heroku.
 
 
@@ -33,4 +33,4 @@ COMING SOON:
 
 
 ## Authors
-* **Lena Martinson** [Github](https://github.com/Blonded)
+* **Lena Martinson** (Blonded)[Github](https://github.com/Blonded)
