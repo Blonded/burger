@@ -7,7 +7,7 @@ var orm = require("../config/orm.js")
 // this will be calling the ORM functions
 var burger = {
   all: function (cb) {
-    orm.all("cats", function(res) {
+    orm.all("burgers", function(res) {
       cb(res);
     });
   },
