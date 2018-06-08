@@ -1,9 +1,9 @@
 -- Create My SQL Table here
 -- Create a database
-DROP DATABASE IF EXISTS burgers_db;
-CREATE DATABASE burgers_db;
+DROP DATABASE IF EXISTS burger_db;
+CREATE DATABASE burger_db;
 -- use burgers_db
-USE burgers_db;
+USE burger_db;
 
 -- Create a table for burgers_db, include id, burger name, devoured(boolean),
  -- and a primary key.
