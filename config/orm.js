@@ -29,7 +29,7 @@ function printQuestionMarks(num) {
 var orm = {
   // to selectALL
   all: function(tableInput, cb) {
-    var queryString = "INSERT INTO" + tableInput + ";";
+    var queryString = "SELECT FROM" + tableInput + ";";
     connection.query(queryString, function(err,result) {
       if(err) {
         throw err;
