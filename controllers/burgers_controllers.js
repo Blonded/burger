@@ -6,6 +6,29 @@ var router = express.Router();
 //import the model burger.js file to use its database functions
 var burger = require("../models/burger.js");
 
+router.get("/", function(req,res) {
+  burger.all(function(data) {
+    var hbsObject = {
+      burger: data
+    };
+    conosole.log(hbsObject);
+    res.render("index", hbsObject);
+  });
+});
+
+router.post("api/burger", function (req,res) {
+  burger.create([
+    "name", "HUNGRY?"
+  ], [
+    req.body.name, req.body.hungry
+  ], function (result){
+    // to send back the ID of the new quote
+    res.json({ id: result.insertId });
+  });
+});
+
+
+
 
 
 
