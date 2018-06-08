@@ -26,4 +26,4 @@ var burger = {
 
 
 // export at the end of burger.js
-module.exports = burger
+module.exports = burger;
