@@ -21,7 +21,6 @@ $(function(){
   });
 
 
-
 // send put request
 $.ajax(".create-form").on("submit", function(event){
   event.preventDefault();
