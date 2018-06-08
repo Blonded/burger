@@ -11,7 +11,7 @@ var app = express();
 // for everything included in the folder 'public'.
 app.use(express.static("public"));
 
-app.use(bodyParser.urlendcoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 // parse application/json
 app.use(bodyParser.json());
@@ -23,7 +23,7 @@ app.engine("handlebars", exphbs ({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Import routes and give the server access to them.
-var routes = require("./controllers/catsController.js");
+var routes = require("./controllers/burgers_controllers.js");
 
 app.use("/", routes);
 
