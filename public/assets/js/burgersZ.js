@@ -14,7 +14,7 @@ $(function(){
       data: newOrder
     }).then(
       function() {
-        console.log("changed burger to ", newBurger);
+        //console.log("changed burger to ", newBurger);
         location.reload();
       }
     );
@@ -32,10 +32,10 @@ $.ajax(".create-form").on("submit", function(event){
 // send post request
 $.ajax("/api/burgers", {
   type: "POST",
-  data: newBurgerChoicegit
+  data: newBurgerChoice
 }).then(
   function(){
-    console.log("Created new burger");
+    // console.log("Created new burger");
     //reload page to get the updated list
     location.reload();
   }
