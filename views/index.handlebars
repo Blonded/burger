@@ -1,23 +1,24 @@
 <div class="container">
 <header align="center">
-  <h1>Burgers!</h1>
-  <h4> This calls for a cheeseburger... </h4>
+  <h1>You're not yourself when you're hungry.</h1>
+  <h4> This calls for a cheeseburger!</h4>
 </header>
 <hr>
 
 <form class="create-form" align="center">
   <h2>Add Order</h2>
   <div class="form-group">
-    <label for="newOrder">Burger Name:</label>
+    <label for="newOrder">What type of burger would you like?</label>
+    <br>
     <input type="text" id="newOrder" name="name">
   </div>
 
   <div class="form-group">
-    <label for="hungry">Hungry?</label><br>
+    <label for="hungry">How hungry are you?</label><br>
     {{!-- devoured true --}}
-    <input type="radio" name="hungry" value="1"> eat now!<br>
+    <input type="radio" name="hungry" value="1"> Hangry!<br>
   {{!-- deboured false --}}
-    <input type="radio" name="hungry" value="0"> wait to eat
+    <input type="radio" name="hungry" value="0"> I can wait.
   </div>
 
   <button id="create-burger">Add Order</button>
@@ -26,7 +27,8 @@
 <div class="row">
 <div class="col-md-6 col-lg-6 col-sm-12">
 <ul id="to-eat">
-<h2> hungry?</h2>
+  <!-- Burgers will be placed here if the user selects 'i can wait' when submitting a burger. -->
+<h2> To go burgers: </h2>
   {{#each burgers}}
     {{#unless devoured}}
       {{> burgers/burger-block devoured=false}}
@@ -38,7 +40,7 @@
 <hr>
 <div class="col-md-6 col-lg-6 col-sm-12">
 <ul id="already-ate">
- <h2> Past Burgers! </h2>
+ <h2> Oh sorry! Did you want a bite?</h2>
   {{#each burgers}}
     {{#if devoured}}
       {{> burgers/burger-block devoured=true}}
