@@ -1,4 +1,15 @@
+/* div wrapped for body because of handlebars */
+#body-style{
+background-image: url(https://images.unsplash.com/photo-1503432697506-6986abec65ca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=69dc9cfb44528dde9a2ebaf7fa11f942&auto=format&fit=crop&w=526&q=80);
+width: cover;
+repeat: none;
+}
 
+.container{
+  background-color: white;
+}
+
+/* lists */
 li {
   padding: 5px;
   margin: 5px;
@@ -23,4 +34,47 @@ img {
 	max-width: 100%;
 	width: auto;
 	height: 75px;
+}
+
+/* button class */
+.create-burger:hover{
+background-color: red;
+}
+
+/* button class */
+/* change order */
+.change-order {
+    letter-spacing: 0;
+}
+
+.change-order:hover,
+.change-order:active {
+  letter-spacing: 5px;
+}
+
+.change-order:after,
+.change-order:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(#fff, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.change-order:hover:after,
+.change-order:hover:before {
+  backface-visibility: hidden;
+  border-color: #fff;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+
+.change-order:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
 }
