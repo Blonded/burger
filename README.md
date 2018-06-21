@@ -5,6 +5,11 @@ The burger will then append on either side of the page, depending on your hunger
 
 Enjoy!
 
+
+[Launch the Burger App Here!](https://quiet-dusk-52084.herokuapp.com/)
+
+![Preview](http://i64.tinypic.com/2yp0t8m.png "Preview")
+
 ## Built with
 * HTML
 * CSS
@@ -19,10 +24,6 @@ Enjoy!
 * Files using MVC [Model, View, Controller] Design Pattern - necessary for functionality.
 * Launched with Heroku.
 
-
-[Launch the Burger App Here!](https://quiet-dusk-52084.herokuapp.com/)
-
-![Preview](http://i64.tinypic.com/2yp0t8m.png "Preview")
 
 ## Sample of Code:
 
