@@ -22,7 +22,7 @@ Enjoy!
 
 [Launch the Burger App Here!](https://quiet-dusk-52084.herokuapp.com/)
 
-[Preview Image]:(http://i64.tinypic.com/2yp0t8m.png)
+![Preview](http://i64.tinypic.com/2yp0t8m.png "Preview")
 
 ## Sample of Code:
 
@@ -54,7 +54,7 @@ function burgerTemplate(burger){
 
 
 ## Authors
-* **Lena Martinson** (Blonded)[Github](https://github.com/Blonded)
+* **Lena Martinson** [Github](https://github.com/Blonded)
 
 ## Acknowledgements:
-* **Amber Burroughs** (Github)(https://github.com/AmberLBurroughs) - Thank you for helping me make it functional!
+* **Amber Burroughs** [Github](https://github.com/AmberLBurroughs) - Thank you for helping me make it functional!
