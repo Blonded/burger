@@ -26,6 +26,15 @@ li {
   align-items: center;
 }
 
+/* cursor */
+.custom {
+  cursor: url(http://i68.tinypic.com/20a30nt.png), auto;
+}
+
+body, html{
+  cursor:url('http://i68.tinypic.com/20a30nt.png'), pointer;
+}
+
 
 #header-tag{
   margin-top: 30px;
