@@ -1,20 +1,42 @@
 /* div wrapped for body because of handlebars */
 #body-style{
-background-image: url(https://images.unsplash.com/photo-1503432697506-6986abec65ca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=69dc9cfb44528dde9a2ebaf7fa11f942&auto=format&fit=crop&w=526&q=80);
-width: cover;
-repeat: none;
+background-image: url(https://images.unsplash.com/photo-1501958742272-10ce02fc3e58?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7c641d9aff38dab8baa0540290d18d78&auto=format&fit=crop&w=1352&q=80);
+background-size: cover;
+background-repeat: no-repeat;
 }
 
 .container{
   background-color: white;
+  margin-top: 60px;
+  margin-bottom: 25px;
+  /* border: 2px solid; */
+  border-radius: 25px;
+font-family: 'Montserrat', arial;
 }
 
+.header-form{
+  font-family: 'Shrikhand', arial;
+}
 /* lists */
 li {
-  padding: 5px;
-  margin: 5px;
+  padding: 10px;
+  margin: 20px;
   background: #fff;
   border:1px solid #faebd7;
+  align-items: center;
+}
+
+
+#header-tag{
+  margin-top: 30px;
+  color: white;
+  font-family: impact;
+  font-family: 'Shrikhand', arial;
+
+}
+
+.h2{
+
 }
 
 .label {
