@@ -1,44 +1,49 @@
-<h1> Hungry yet? </h1>
 
-<h4> This calls for a cheeseburger... </h4>
-<hr>
+<!-- //create a button here that will submit the user into the database. -->
+
+<h1>burgers!</h1>
+
+<h2>burgers if you're hungry!</h2>
+
 <ul>
+
   {{#each burgers}}
-    {{#unless sleepy}}
+
+    {{#unless hungry}}
+
       {{> burgers/burger-block hungry=true}}
     {{/unless}}
   {{/each}}
 </ul>
 
-<h2>Burgers!</h2>
+<h2>burgers that are sleepy!</h2>
 
 <ul>
+
   {{#each burgers}}
+
     {{#if hungry}}
       {{> burgers/burger-block hungry=false}}
     {{/if}}
   {{/each}}
 </ul>
 
-<h2>Add Order</h2>
+<h2>Add an Order</h2>
 <form class="create-form">
 
   <div class="form-group">
-    <label for="newOrder">Burger Name:</label>
-    <input type="text" id="newOrder" name="name">
+    <label for="burger">Order Name:</label>
+
+    <input type="text" id="burger" name="name">
   </div>
 
   <div class="form-group">
-    <label for="hungry">Hungry?</label><br>
-    <input type="radio" name="hungry" value="1" checked> Hungry!<br>
-    <input type="radio" name="hungry" value="0"> not hungry
+
+    <label for="hungry">hungry?</label><br>
+
+    <input type="radio" name="hungry" value="1" checked> hungry!<br>
+    <input type="radio" name="hungry" value="0"> full
   </div>
 
-  <button type="submit">Add Order</button>
+  <button type="submit">Add burger</button>
 </form>
-
-
-
-
-
-<!-- //create a button here that will submit the user into the database. -->

@@ -1,71 +1,68 @@
-// require express
 var express = require("express");
-//create router for express
+
 var router = express.Router();
 
-//import the model burger.js file to use its database functions
+// Import the model (burger.js) to use its database functions.
 var burger = require("../models/burger.js");
 
-
-// DO C.R.U.D.
-// Create, Read, Update, Delete
-
-router.get("/", function(req,res) {
+// Create all our routes and set up logic within those routes where required.
+router.get("/", function(req, res) {
+  // grab all
   burger.all(function(data) {
     var hbsObject = {
-      burger: data
+
+      burgers: data
     };
     console.log(hbsObject);
     res.render("index", hbsObject);
   });
 });
 
-
-// post is to update
-router.post("api/burger", function (req,res) {
-  // requiring the burger.js file - to create/update a new burger.
+router.post("/api/burgers", function(req, res) {
+  //Create
   burger.create([
-    // create a new name in the database.
+
     "name", "hungry"
   ], [
     req.body.name, req.body.hungry
-  ], function (result){
-    // to send back the ID of the new quote
-    //print in json
+  ], function(result) {
+    // Send back the ID of the new quote
     res.json({ id: result.insertId });
   });
 });
 
-router.put("api/burger/:id", function(req, res) {
+router.put("/api/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
-  //console.log("condition", condition);
+  console.log("condition", condition);
 
-  burger.update ({
+//UPDATE
+  burger.update({
+    
     hungry: req.body.hungry
   }, condition, function(result) {
-    if(result.changedRows === 0) {
-      // if no rows changed, then the id must not exist
-      // throw 404 error
+    if (result.changedRows == 0) {
+      // If no rows were changed, then the ID must not exist, so 404
       return res.status(404).end();
-    } else{
+    } else {
       res.status(200).end();
     }
   });
 });
 
+// DELETE
+router.delete("/api/burgers/:id", function(req, res) {
+  var condition = "id = " + req.params.id;
 
-
-
-
-
-
-
-
-// create the router for the app and export the router at the end of your files
-
-
-
+  burger.delete(condition, function(result) {
+    if (result.affectedRows == 0) {
+      // If no rows were changed, then the ID must not exist [404]
+      return res.status(404).end();
+    } else {
+      res.status(200).end();
+    }
+  });
+});
 
 // Export routes for server.js to use.
 module.exports = router;

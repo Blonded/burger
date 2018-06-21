@@ -1,9 +1,11 @@
+
 <li>
 	{{name}}
 
-	<button class="change-order" data-id="{{id}}" data-newburger="{{hungry}}">
-		{{#if hungry}}Time to Eat!{{else}}barf!{{/if}}
+	<button class="change-appetite" data-id="{{id}}" data-newappetite="{{appetite}}">
+		{{#if appetite}}food!!!!{{else}}throw away!{{/if}}
 	</button>
 
-	<button class="delete-order" data-id="{{this.id}}">DELETE!</button>
+
+	<button class="delete-burger" data-id="{{this.id}}">delete burger</button>
 </li>
