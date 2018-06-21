@@ -29,7 +29,7 @@ li {
 
 /* cursor */
 .custom {
-  cursor: url(http://i68.tinypic.com/20a30nt.png), auto;
+  cursor: url(http://i68.tinypic.com/20a30nt.png);
 }
 
 body, html{
@@ -77,11 +77,13 @@ background-color: red;
 /* change order */
 .change-order {
     letter-spacing: 0;
+    cursor:url('http://i68.tinypic.com/20a30nt.png'), pointer;
 }
 
 .change-order:hover,
 .change-order:active {
   letter-spacing: 5px;
+  cursor:url('http://i68.tinypic.com/dytzza.jpg'), pointer;
 }
 
 .change-order:after,
