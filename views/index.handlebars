@@ -1,49 +1,53 @@
+<div class="container">
+<header align="center">
+  <h1>Burgers!</h1>
+  <h4> This calls for a cheeseburger... </h4>
+</header>
+<hr>
 
-<!-- //create a button here that will submit the user into the database. -->
+<form class="create-form" align="center">
+  <h2>Add Order</h2>
+  <div class="form-group">
+    <label for="newOrder">Burger Name:</label>
+    <input type="text" id="newOrder" name="name">
+  </div>
 
-<h1>burgers!</h1>
+  <div class="form-group">
+    <label for="hungry">Hungry?</label><br>
+    {{!-- devoured true --}}
+    <input type="radio" name="hungry" value="1"> eat now!<br>
+  {{!-- deboured false --}}
+    <input type="radio" name="hungry" value="0"> wait to eat
+  </div>
 
-<h2>burgers if you're hungry!</h2>
-
-<ul>
-
+  <button id="create-burger">Add Order</button>
+</form>
+<hr>
+<div class="row">
+<div class="col-md-6 col-lg-6 col-sm-12">
+<ul id="to-eat">
+<h2> hungry?</h2>
   {{#each burgers}}
-
-    {{#unless hungry}}
-
-      {{> burgers/burger-block hungry=true}}
+    {{#unless devoured}}
+      {{> burgers/burger-block devoured=false}}
     {{/unless}}
   {{/each}}
 </ul>
+</div>
 
-<h2>burgers that are sleepy!</h2>
-
-<ul>
-
+<hr>
+<div class="col-md-6 col-lg-6 col-sm-12">
+<ul id="already-ate">
+ <h2> Past Burgers! </h2>
   {{#each burgers}}
-
-    {{#if hungry}}
-      {{> burgers/burger-block hungry=false}}
+    {{#if devoured}}
+      {{> burgers/burger-block devoured=true}}
     {{/if}}
   {{/each}}
 </ul>
+</div>
+</div>
+</div>
 
-<h2>Add an Order</h2>
-<form class="create-form">
 
-  <div class="form-group">
-    <label for="burger">Order Name:</label>
-
-    <input type="text" id="burger" name="name">
-  </div>
-
-  <div class="form-group">
-
-    <label for="hungry">hungry?</label><br>
-
-    <input type="radio" name="hungry" value="1" checked> hungry!<br>
-    <input type="radio" name="hungry" value="0"> full
-  </div>
-
-  <button type="submit">Add burger</button>
-</form>
+<!-- //create a button here that will submit the user into the database. -->

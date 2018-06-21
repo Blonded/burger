@@ -3,10 +3,8 @@
 var mysql = require("mysql");
 
 var connection;
-var JAWSDB_URL = "mysql://ri1k7wf171zwoinz:lzh6ydyonoh8wdvw@j1r4n2ztuwm0bhh5.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/fw4fks9mdq7s6qhi"
 
-
-
+// var JAWSDB_URL = "mysql://ri1k7wf171zwoinz:lzh6ydyonoh8wdvw@j1r4n2ztuwm0bhh5.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/fw4fks9mdq7s6qhi"
 // = mysql.createConnection({
 //   port: 3306,
 //   host: "localhost",
@@ -34,7 +32,7 @@ connection = mysql.createConnection({
         port: 3306,
         user: "root",
         password: "password",
-        database: "burger_db"
+        database: "burgerz_db"
       });
 }
 

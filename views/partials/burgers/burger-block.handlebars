@@ -1,11 +1,11 @@
-
 <li>
-	{{name}}
-
-	<button class="change-appetite" data-id="{{id}}" data-newappetite="{{appetite}}">
-		{{#if appetite}}food!!!!{{else}}throw away!{{/if}}
+	<p>{{burger_name}}</p>
+{{#if devoured}}
+	<img src="https://cdn.vox-cdn.com/thumbor/rodiIJevTEAOxv5YzLf0ayYk6RU=/0x0:1800x1200/1200x800/filters:focal(756x456:1044x744)/cdn.vox-cdn.com/uploads/chorus_image/image/56103909/impossibleburger.0.jpg">
+{{else}}
+	<img src="http://www.pngmart.com/files/5/Hamburger-PNG-Clipart.png">
+{{/if}}
+	<button class="change-order" data-id="{{id}}" data-devoured="{{devoured}}">
+		{{#if devoured}}barf!{{else}}time to eat!{{/if}}
 	</button>
-
-
-	<button class="delete-burger" data-id="{{this.id}}">delete burger</button>
 </li>

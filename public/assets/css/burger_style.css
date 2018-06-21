@@ -1,7 +1,9 @@
+
 li {
   padding: 5px;
   margin: 5px;
-  /* background: #faebd7; */
+  background: #fff;
+  border:1px solid #faebd7;
 }
 
 .label {
@@ -16,4 +18,9 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+img {
+	max-width: 100%;
+	width: auto;
+	height: 75px;
 }
