@@ -6,7 +6,7 @@ $(function(){
   $(document).on("click", ".change-order", function(event) {
     var id = $(this).data("id");
     var burger_name = $(this).siblings("p").text();
-    console.log(burger_name)
+    //console.log(burger_name)
     var newOrder = {
       devoured: true
     };
@@ -35,7 +35,7 @@ $(function(){
           burgerTemplate(updatedBurger);
 
         }else {
-          console.log("burger not updated:");
+          //console.log("burger not updated:");
           alert("oops! something went wrong. please refresh and try again!");
         }
 
@@ -79,7 +79,7 @@ $(function(){
     var button = $("<button>").addClass("change-order").attr("data-id", burger.id).attr("data-devoured", burger.devoured);
 
     if(burger.devoured === true || burger.devoured === "1"){
-      button.text("barf!");
+      button.text("Regurgitate!");
       $(li).append(img, button);
       img.attr("src", "https://cdn.vox-cdn.com/thumbor/rodiIJevTEAOxv5YzLf0ayYk6RU=/0x0:1800x1200/1200x800/filters:focal(756x456:1044x744)/cdn.vox-cdn.com/uploads/chorus_image/image/56103909/impossibleburger.0.jpg");
       $("#already-ate").append(li);

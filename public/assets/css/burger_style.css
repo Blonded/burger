@@ -21,6 +21,7 @@ font-family: 'Montserrat', arial;
 li {
   padding: 10px;
   margin: 20px;
+  width: 400px;
   background: #fff;
   border:1px solid #faebd7;
   align-items: center;
