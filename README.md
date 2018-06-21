@@ -22,15 +22,13 @@ Enjoy!
 
 [Launch the Burger App Here!](https://quiet-dusk-52084.herokuapp.com/)
 
-[Preview Image]:(public/assets/img/preview.jpg)
+[Preview Image]:(http://i64.tinypic.com/2yp0t8m.png)
 
 ## Sample of Code:
 
 Created a burger element to be appended to page so the page doesn't have to reload to update. [In JS]
 
-'''
-
-
+```
 
 function burgerTemplate(burger){
   var li = $("<li>");
@@ -52,11 +50,11 @@ function burgerTemplate(burger){
   }
 }
 
-'''
+```
 
 
 ## Authors
 * **Lena Martinson** (Blonded)[Github](https://github.com/Blonded)
 
 ## Acknowledgements:
-* **Amber Burroughs** (Github)(https://github.com/AmberLBurroughs) - Thank you for helping me make it functional! 
+* **Amber Burroughs** (Github)(https://github.com/AmberLBurroughs) - Thank you for helping me make it functional!
