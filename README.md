@@ -8,7 +8,7 @@ Enjoy!
 
 [Launch the Burger App Here!](https://quiet-dusk-52084.herokuapp.com/)
 
-![Preview](http://i64.tinypic.com/2yp0t8m.png "Preview")
+![Preview]("Preview")
 
 ## Built with
 * HTML
@@ -55,7 +55,7 @@ function burgerTemplate(burger){
 
 
 ## Authors
-* **Lena Martinson** [Github](https://github.com/Blonded)
+* **Lena Blonded** [Github](https://github.com/Blonded)
 
 ## Acknowledgements:
 * **Amber Burroughs** [Github](https://github.com/AmberLBurroughs) - Thank you for helping me make it functional!
